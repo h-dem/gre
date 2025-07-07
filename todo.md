@@ -5,8 +5,6 @@
 - [ ] Add a takedown notice (copy from DCAA/DSCC)
 - [ ] Finish creating documentation
 - [ ] Fix all links that have [text](#) or [text](link)
-- [ ] fix search for plurals (lunr matches the singular, but then we can't highlight in the snippet)
-- [ ] consider finding places in search (not just gardens)
 - Can we show progress in number of gardens in each place?  ("23 out of 35 known gardens have been published)
 
 # Pompeii Notes/Issues
@@ -25,7 +23,10 @@
 - [ ] many dupl images in thugga -- warning!  the "2" image may be older (missing additional label/green patch)
 - [ ] some photos we want lower resolution (so copyright holder can control access to full resolution)
 - [ ] link to reuse/take-down policy in image captions
-- [ ] generally improve the search
+- [ ] search
+    - [ ] use lunr to remove stopwords from searches (doing this manually for just a few words now: the of at etc.)
+    - [ ] fix search for plurals (lunr matches the singular, but then we can't highlight in the snippet)
+    - [ ] consider finding places in search (not just gardens)
 
 # Cleanup
 
@@ -39,7 +40,6 @@
 - [ ] excavation dates -- missing from archetype and some gardens
 - [ ] rename ## Places to something like "Linked Places" or "Place IDs" (should people be listed under Keywords or Linked IDs or have their own section?)
 - [ ] backslashes \
-- [ ] search: use lunr to remove stopwords from searches (doing this manually for just a few words now: the of at etc.)
 - [ ] fix or remove empty links -- search for "(#)"
 - [ ] update Leaflet from 1.6 to 1.9.4
 - [ ] cleanup double/triple spaces (skip arabia-petragarden!) AFTER we have cleaned up spaces from image filenames
@@ -55,27 +55,22 @@
 
 # Documentation
 
-- installing software on Windows
-    - vscode
-    - git
-        - On Windows: winget
-    - hugo
-        - winget install Hugo.Hugo
-        - winget upgrade hugo
+- winget upgrade hugo
 - installing software on Mac
     - vscode
     - git
+        - already installed on MacOS?
+        - git config --global user.name "John Doe"
+        - git config --global user.email johndoe@example.com
     - hugo
+        - if brew isn't already installed:
+            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
         - brew install hugo
         - Or, if using MacPorts: sudo port install hugo
+
 - [ ] snippets for shortcodes! id, image, keyword (type and then press CTRL-SPACE)
 - [ ] use \" to escape any quotes within a caption
-- [ ] frontmatter quoting: omit, unless ambiguous
-- [ ] standardize and document recommendations for entry titles
-    - [ ] House name, or house number, or both?
-    - [ ] Roman/Arabic numerals for region, insula, house (e.g. Pompeii VIII.4.30 vs VIII.iv.30)
-    - [ ] ideally, don't depend on upper/lowercase for meaning
-- [ ] rewrite software setup
+- [ ] frontmatter quoting: only for title
 - [ ] workflow for simplest way to add a new garden/place? ("hugo new" requires path, but will set the GRE_ID, etc.)
 
 # Article Guidelines
@@ -129,10 +124,14 @@
 - in the text of the article, Divya suggested having dates at the top -- do we want both of these at top?  (They could also logically go near bottom, after bibliography and before keywords/places)
     - date of the garden (how to phrase this?  dates of use?)
     - excavation date
-- double angle quotes like « Pluton » -- can these be converted to normal " quotes
+- double angle quotes like « Pluton » -- can these be converted to normal " quotes?
 - what is green highlighting for???
     - Example: https://roman-gardens.github.io/test-drafts/place/italia/pompeii/region_i/insula_ix/house_5/house_of_the_fruit_orchard/
 - add area editors to province pages?
+- standardize and document recommendations for entry titles
+    - House name, or house number, or both?
+    - Roman or Arabic numerals? for region, insula, house (e.g. Pompeii VIII.4.30 vs VIII.iv.30)
+
 
 # User forks
 
