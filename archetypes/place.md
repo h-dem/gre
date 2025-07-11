@@ -3,7 +3,7 @@
 gre_id: "{{ $id }}"
 aliases: [/id/{{ $id }}]
 type: garden
-title: "{{ title (replace .Name "-" " ") }}"
+title: {{ title (replaceRE `[-_]` " " .Name) }}
 latlon: [ 0, 0 ]
 author: Author Name
 contributor: Contributor Name
