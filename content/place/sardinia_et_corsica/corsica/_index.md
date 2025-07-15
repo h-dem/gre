@@ -1,5 +1,5 @@
 ---
-gre_id: "dce929afd4"
+gre_id: dce929afd4
 aliases: [/id/dce929afd4]
 type: place
 title: Corsica

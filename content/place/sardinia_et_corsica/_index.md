@@ -1,5 +1,5 @@
 ---
-gre_id: "0a0a493e4e"
+gre_id: 0a0a493e4e
 aliases: [/id/0a0a493e4e]
 type: place
 title: Sardinia et Corsica

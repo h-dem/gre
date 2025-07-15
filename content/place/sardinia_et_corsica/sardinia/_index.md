@@ -1,5 +1,5 @@
 ---
-gre_id: "a5fba537c1"
+gre_id: a5fba537c1
 aliases: [/id/a5fba537c1]
 type: place
 title: Sardinia
