@@ -27,23 +27,20 @@
 - [ ] move content from garden entries to the province _index.md
 - [ ] add gre_id/aliases for places, update citation example
 - [ ] DON'T LINK place searches from place pages (only from garden pages)
-- [ ] id shortcode for people (perseus authors like "Pliny the Elder")
-- [ ] excavation dates -- missing from archetype and some gardens
-- [ ] rename ## Places to something like "Linked Places" or "Place IDs" (should people be listed under Keywords or Linked IDs or have their own section?)
+- [ ] id shortcode for people? (perseus authors like "Pliny the Elder")
 - [ ] backslashes \
 - [ ] fix or remove empty links -- search for "(#)"
 - [ ] update Leaflet from 1.6 to 1.9.4
 - [ ] cleanup double/triple spaces (skip arabia-petragarden!) AFTER we have cleaned up spaces from image filenames
+- should we rework the id shortcode to handle inline references?
 
 # Keywords
 - new meta page section showing UNLINKED keywords (literary gardens, etc.)
 - keywords -- use glossary from GRE v.1
-- move keywords to below bibliography
 - keywords like lucus, nemus (recode as keyword "groves"?), oscilla, stagnum, textrina that are not proper AAT terms
 - "literary gardens" keyword okay, but do we really need "archaeological gardens"? (currently commented out in the relatively few articles that have it, but nearly all the gardens are arch.)
 - Search for any keywords mentioned in text that are not listed under the garden keywords
 - public list of keywords as glossary (similiar to /meta page)
-
 
 # from 2025 meetings
 - [ ] people: Change Pleiades liaison from Gabriel to Tom Elliott?
@@ -72,25 +69,6 @@
 
 # Article Guidelines
 
-- filename
-    - all lowercase, no special characters (a-z 0-9 _ - . only, NO SPACES!)
-- frontmatter
-    - title
-        - in title case with proper punctuation as needed
-        - use proper diacritics (TODO: guidance on how to add diacritics -- maybe a )
-        - escape any double-quotes with backslash \"
-    - latlon (if known)
-        - in the hugo server preview, zoom map to location
-        - CTRL-CLICK the map to copy the coordinates
-        - paste into the "latlon" field in the frontmatter
-    - author
-        - of the article text
-    - contributor
-        - your name goes here!
-    - date
-        - original publication date (update this when you are ready to publish)
-    - modified
-        - update this if there are significant edits later
 - images
     - guidelines for image filename, size, format
     - new images can be added to the gre-images repo via the GitHub website
@@ -101,11 +79,6 @@
     - caption = caption text (should all figures be numbered for the article??)
     - credit = "Drawing by...", "Gauckler, P., 1904, pp.16-17", etc. -- standardize format?
     - alt = "" in most cases, unless we want to add additional description when the reader cannot see the image -- see https://webaim.org/techniques/alttext/ for guidance
-- bibliography
-- keywords
-    - to add a keyword, type "keyword" and press CTRL-SPACE and select "GRE keyword shortcut"
-- places
-    - to add a place, type "id" and press CTRL-SPACE and select "GRE id shortcut"
 - comment out headers of any empty sections
 
 # Questions/Discussion
